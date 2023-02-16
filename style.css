@@ -58,6 +58,8 @@ nav > a {
 }
 
 #first-page {
+  display: flex;
+  flex-direction: column;
   background-image: url(images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
