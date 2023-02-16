@@ -1,0 +1,105 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  / *******************************************/
+body {
+  background-color: #e5e5e5;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+  .after-body {
+    width: 375px;
+  }
+}
+
+.after-body {
+  padding: 10px 20px;
+  margin: 0 auto;
+  background: white;
+  border-bottom-left-radius: calc(10rem / 3);
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* coloring n font sizes */
+
+a {
+  text-decoration: none;
+}
+
+nav > a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+}
+
+#first-page {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 90vh;
+}
+
+section > h1:first-child {
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  color: #172b4d;
+}
+
+section > p:first-child {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #344563;
+}
+
+.lets-connect {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #7f8cff;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+ul > li {
+  list-style: none;
+}
